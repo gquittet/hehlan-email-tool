@@ -1,0 +1,52 @@
+ETUDIANT:
+  NOM: "Votre nom"
+  PRENOM: "Votre prénom"
+  EMAIL: "prenom.nom@std.heh.be"
+  MOT_DE_PASSE: "votre mot de passe"
+  PASSERELLE: false
+
+LANGUE: "fr"
+
+FICHIER:
+  NOM: "HEH - LAN _ BAC3 + MA0 - emails"
+  EXTENSION: "CSV"
+
+EMAIL:
+  EN:
+    SUBJECT: "HEH LAN: Sponsorship Offers"
+    ATTACHEMENTS:
+      PATH: "./email/en/pdf/"
+      FILENAMES:
+        - "Contract HEHLAN2019.pdf"
+        - "Fixed-price HEHLAN2019.pdf"
+        - "Options HEHLAN2019.pdf"
+        - "Presentation HEHLAN2019.pdf"
+    MAIL:
+      PATH: "./email/en/"
+      FILENAME: "mail.html"
+  FR:
+    SUBJECT: "HEH LAN : Offres de Sponsoring"
+    ATTACHEMENTS:
+      PATH: "./email/fr/pdf/"
+      FILENAMES:
+        - "Contrat HEHLAN2019.pdf"
+        - "Dossier HEHLAN2019.pdf"
+        - "Forfaits HEHLAN2019.pdf"
+        - "Options HEHLAN2019.pdf"
+    MAIL:
+      PATH: "./email/fr/"
+      FILENAME: "mail.html"
+
+SMTP:
+  HOST: "smtp.office365.com"
+  PORT: 587
+
+VARIABLES:
+  HTML:
+    FIRSTNAME: "${FIRSTNAME}"
+    LASTNAME: "${LASTNAME}"
+    GRADE: "${GRADE}"
+  CODE:
+    FIRSTNAME: "firstname"
+    LASTNAME: "lastname"
+    GRADE: "grade"
