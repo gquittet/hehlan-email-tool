@@ -2,7 +2,7 @@ import csv
 import re
 
 import yaml
-from emailSpammer import EMailSpammer
+from email_spammer import EMailSpammer
 
 with open("config.yml", 'r') as stream:
     try:
