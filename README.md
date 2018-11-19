@@ -11,9 +11,13 @@ If you use Linux, use your package manager like DNF, APT, Pacman, emerge, XBPS a
 
 ## How to use
 
-1. Create a virtual environment with python 3: `virtualenv3 hehlan-email-tool` or `virtualenv hehlan-email-tool`
-2. Go inside the folder that was created and clone this repository inside it: `git clone https://github.com/gquittet/hehlan-email-tool .`
-3. Install the requirements : `pip install -r requirements.txt`
-4. Download the emails as CSV and put the file in the folder.
-5. Edit the variables inside the **config.xml** file.
-6. Run the `send_mail.py` script.
+1. Clone the repository: `git clone https://github.com/gquittet/hehlan-email-tool.git`
+2. Create a virtual environment with python 3: `virtualenv3 hehlan-email-tool` or `virtualenv hehlan-email-tool`
+3. Enable the environment with `. bin/activate` and desactivate it with `deactivate`.
+4. Install the requirements : `pip install -r requirements.txt`
+5. Download the emails as CSV and put the file in the folder.
+6. Edit the variables inside the **config.xml** file.
+7. Run the `send_mail.py` script.
+
+> The steps 1, 2 and 4 are only required by the installation process.
+
